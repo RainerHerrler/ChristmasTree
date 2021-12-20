@@ -7,11 +7,13 @@
 //============================================================================
 
 #include <iostream>
+#include "tree.h"
+
 using namespace std;
 
 int main(){
     char cTree;
-    int iSize, iSpace;
+    int iSize;
 
     std::cout << "Christmas Tree Application" << std::endl;
     std::cout << "Enter the size of your christmas tree: ";
@@ -19,14 +21,6 @@ int main(){
     std::cout << "Enter the character you would like to use for your tree: ";
     std::cin >> cTree;
 
-    iSpace = iSize;
-
-    for (int i = 0; i < iSize*2; i+=2){
-        std::string sTree(i, cTree);
-        std::string sSpace(iSpace, ' ');
-        std::cout << sSpace + sTree + sSpace<< std::endl;
-        iSpace -= 1;
-    }
-
+	printTree(iSize, cTree);
     return 0;
 }
