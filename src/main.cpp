@@ -7,6 +7,7 @@
 //============================================================================
 
 #include <iostream>
+#include <iomanip>
 #include "tree.h"
 
 using namespace std;
@@ -22,5 +23,7 @@ int main(){
     std::cin >> cTree;
 
 	printTree(iSize, cTree);
+	cout << std::setw(iSize+2) <<"****"<<endl;
+	cout << std::setw(iSize+2) <<"****"<<endl;
     return 0;
 }
