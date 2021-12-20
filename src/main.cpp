@@ -15,7 +15,7 @@ int main(){
     char cTree;
     int iSize;
 
-    std::cout << "Christmas Tree Application" << std::endl;
+    std::cout << "Christmas Tree Application WS2021" << std::endl;
     std::cout << "Enter the size of your christmas tree: ";
     std::cin >> iSize;
     std::cout << "Enter the character you would like to use for your tree: ";
