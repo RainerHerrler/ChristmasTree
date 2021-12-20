@@ -7,6 +7,7 @@
 //============================================================================
 
 #include <iostream>
+#include <iomanip>
 #include "tree.h"
 
 using namespace std;
@@ -20,6 +21,8 @@ int main(){
     std::cin >> iSize;
     std::cout << "Enter the character you would like to use for your tree: ";
     std::cin >> cTree;
+	cout << std::setw(iSize+2) <<"****"<<endl;
+	cout << std::setw(iSize+2) <<"****"<<endl;
 
 	printTree(iSize, cTree);
     return 0;
